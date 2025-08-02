@@ -85,6 +85,12 @@ h1 {
     width: 100%;
 }
 
+.list ul {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
 li {
     list-style: none;
     display: flex;
@@ -120,4 +126,8 @@ li .delete {
 
 li .delete:hover {
     background-color: #ffffff4d;
+}
+
+.checkedList {
+    color: gray;
 }
