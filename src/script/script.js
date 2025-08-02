@@ -29,17 +29,18 @@ document.querySelector("#add").addEventListener('click', () => {
 
 lista.addEventListener('click', (e) => {
     const alvo = e.target.closest("button");
+    const li = e.target.closest('li');
 
     if(alvo.classList.contains("check")) {
-        e.target.closest("li").querySelector("span").classList.add('checkedList');
-        e.target.closest('li').querySelector("span").style.textDecoration = "line-through";
-        e.target.closest('li').querySelector(".delete").disabled = false;
-        e.target.closest('li').querySelector(".delete").style.cursor = "pointer";
-        e.target.closest("li").querySelector(".check").disabled = true;
-        e.target.closest("li").querySelector(".check").style.cursor = "not-allowed";
+        li.querySelector("span").classList.add('checkedList');
+        li.querySelector("span").style.textDecoration = "line-through";
+        li.querySelector(".delete").disabled = false;
+        li.querySelector(".delete").style.cursor = "pointer";
+        li.querySelector(".check").disabled = true;
+        li.querySelector(".check").style.cursor = "not-allowed";
     }
 
     if(alvo.classList.contains('delete')) {
-        e.target.closest('li').remove();
+        li.remove();
     }
 });
