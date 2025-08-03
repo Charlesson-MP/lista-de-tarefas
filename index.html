@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="./src/css/style.css">
     <title>Lista de tarefas</title>
 </head>
 <body>
@@ -11,23 +13,29 @@
         <h1>Lista de tarefas</h1>
         <div class="entrada">
             <label for="tarefa">Tarefa:</label>
-            <input type="text" name="tarefa" id="tarefa">
-            <button type="button">Registrar</button>
+            <input type="text" name="tarefa" id="tarefa" min="10" max="30" placeholder="Digite a tarefa">
+            <button type="button" id="add">
+                <span class="material-symbols-outlined">
+                    add
+                </span>
+            </button>
         </div>
         <div class="list">
             <ul>
                 <li>
-                    <span>Tarefa teste</span>
-                    <button>
-                        <span class="material-symbols-outlined">
-                            check_box
-                        </span>
-                    </button>
-                    <button>
-                        <span class="material-symbols-outlined">
-                            delete
-                        </span>
-                    </button>
+                    <span>Fazer compras no mercado</span>
+                    <div class="btn">
+                        <button class="check">
+                            <span class="material-symbols-outlined">
+                                check_box
+                            </span>
+                        </button>
+                        <button class="delete">
+                            <span class="material-symbols-outlined">
+                                delete
+                            </span>
+                        </button>
+                    </div>
                 </li>
             </ul>
         </div>
