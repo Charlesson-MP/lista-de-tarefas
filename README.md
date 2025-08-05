@@ -40,18 +40,19 @@ Este projeto tem como finalidade praticar os fundamentos de **manipulação do D
 ---
 
 ## 📁 Estrutura de pastas
-
-├── index.html<br>
-├── README.md<br>
-├── src<br>
-│   ├── css<br>
-│   │   └── style.css<br>
-│   ├── images<br>
-│   │   ├── favicon.png<br>
-│   │   └── preview.png<br>
-│   └── script<br>
+```
+/lista-de-tarefas
+├── index.html
+├── README.md
+├── src
+│   ├── css
+│   │   └── style.css
+│   ├── images
+│   │   ├── favicon.png
+│   │   └── preview.png
+│   └── script
 │       └── script.js
-
+```
 ---
 
 ## ⚙️ Como usar
